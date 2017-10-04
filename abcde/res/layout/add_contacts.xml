@@ -1,0 +1,135 @@
+  
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:tools="http://schemas.android.com/tools" 
+     android:layout_width="match_parent" 
+     android:layout_height="match_parent">
+ <LinearLayout
+      android:layout_width="fill_parent" 
+      android:layout_height="fill_parent"
+       android:background="#e5e4e2"
+        android:orientation="vertical">
+  <TextView 
+      android:id="@+id/textView6"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         android:text="add_contatcs"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textColor="#000000" 
+           android:textStyle="bold" /> 
+ <LinearLayout
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:layout_gravity="center"
+       android:layout_marginBottom="40dp" 
+       android:orientation="horizontal">
+  <ImageView
+       android:id="@+id/image" 
+       android:layout_width="100dp" 
+       android:layout_height="100dp" 
+       android:layout_weight="1.26" 
+       tools:ignore="ContentDescription,InefficientWeight" /> 
+  </LinearLayout>
+ <LinearLayout
+      android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_gravity="center" 
+       android:orientation="vertical">
+<EditText 
+    android:id="@+id/editfName" 
+    android:layout_width="281dp" 
+    android:layout_height="40dp"
+     android:layout_marginBottom="10dp" 
+      
+     android:textColor="#000000"
+      android:ems="10" 
+      android:maxLength="20" 
+      android:gravity="center"
+       android:hint="firstname" 
+       android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz." 
+       android:inputType="text" android:paddingBottom="2dp" android:paddingTop="2dp">
+  <requestFocus /> 
+  </EditText>
+  <EditText android:id="@+id/editlName" 
+      android:layout_width="281dp" 
+      android:layout_height="40dp" 
+      android:layout_marginBottom="10dp"
+       
+        android:ems="10" 
+        android:gravity="center"
+         android:hint="lastname"
+          android:inputType="text"
+           android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz." android:maxLength="20" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000000" /> 
+ <LinearLayout 
+     android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+       android:orientation="horizontal">
+  <EditText android:id="@+id/editDob" 
+      android:layout_width="250dp" 
+      android:layout_height="40dp" 
+      android:layout_marginBottom="10dp" 
+      
+       android:ems="10" 
+       android:gravity="center" 
+       android:hint="dob"
+        android:inputType="date" 
+        android:paddingBottom="2dp" 
+        android:paddingTop="2dp"
+         android:textColor="#000" /> 
+  <ImageButton 
+      android:id="@+id/imageButton1" 
+      android:layout_width="wrap_content" 
+      android:layout_height="40dp" 
+      android:layout_alignBottom="@+id/editText" 
+      android:layout_toRightOf="@+id/editText"
+       android:contentDescription="selectdate" 
+       android:cropToPadding="true" 
+       android:paddingBottom="2dp" 
+       android:paddingTop="2dp" 
+       android:layout_marginBottom="10dp" 
+        /> 
+  </LinearLayout>
+  <EditText
+       android:id="@+id/editMobile" 
+       android:layout_width="281dp" 
+       android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+         
+         android:ems="10" 
+         android:maxLength="10" 
+         android:digits="0123456789" 
+         android:gravity="center" 
+         android:hint="mobile_no_"
+          android:inputType="number|phone" 
+          android:paddingBottom="2dp" 
+          android:paddingTop="2dp" 
+          android:textColor="#000000" /> 
+  <EditText
+       android:id="@+id/editEmail" 
+       android:layout_width="281dp" 
+       android:layout_height="40dp"
+        android:layout_marginBottom="10dp" 
+        
+         android:ems="10"
+          android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.@0123456789" 
+          android:gravity="center" 
+          android:hint="email" 
+          android:maxLength="30" android:inputType="text" 
+          android:paddingBottom="2dp" 
+          android:paddingTop="2dp"
+           android:textColor="#000000" /> 
+  <EditText 
+      android:id="@+id/editAddress" 
+      android:layout_width="281dp" 
+      android:layout_height="40dp" 
+      android:layout_marginBottom="10dp"
+       
+       android:ems="10" android:gravity="center" 
+       android:hint="address"
+        android:inputType="textPostalAddress" 
+        android:paddingBottom="2dp" 
+        android:paddingTop="2dp"
+         android:textColor="#000000" /> 
+  </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
